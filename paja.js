@@ -46,5 +46,5 @@ exports.word = function(word, generics) {
 	return matchWord(shuffle(clone(db)), word, generics);
 };
 
-
+console.log('Loaded ' + db.length + ' messages');
 //console.log('match:', matchWord(process.argv[2]), process.argv[2]);
