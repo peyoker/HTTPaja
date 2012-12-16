@@ -11,6 +11,7 @@ var match = function(text, fn) {
 		}
 	});
 	
+	console.log(matches.length + ' matches...');
 	matches.forEach(function(match) {
 		match.count = words.reduce(function(value, word) {
 			return value + (match.tags.indexOf(word) === -1 ? 0 : 1)

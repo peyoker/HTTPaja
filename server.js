@@ -20,6 +20,7 @@ server.get('/text/:text', function (req, res, next) {
 });
 
 server.post('/text', function (req, res, next) {
+	console.log('POST request');
 	res.send(anal.match(req.params.text, paja.word));
 });
 
