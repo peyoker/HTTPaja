@@ -1,5 +1,7 @@
 var match = function(text, fn) {
-	var words = text.split(' ');
+	var words = text.split(' ').map(function(word) {
+		return word.toLowerCase();
+	});
 	
 	var matches = [];
 	words.forEach(function(word) {
