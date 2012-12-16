@@ -19,7 +19,6 @@ server.get('/text/:text', function (req, res, next) {
 	res.send(anal.match(req.params.text, paja.word));
 });
 
-server.listen(8080, function () {});
-
-
-console.log('Match: ', anal.match('mirar este video que asco shurmanos', paja.word));
+server.listen(9100, function () {
+	console.log('server listening');
+});
