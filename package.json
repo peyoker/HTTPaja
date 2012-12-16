@@ -1,0 +1,11 @@
+{ "name": "httpaja",
+  "description": "HTTPaja",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url":  "git@github.com:Benja-gipsy-king/HTTPaja.git" },
+  "dependencies": {
+    "restify": "1.4.x"
+  },
+  "private": true
+}
