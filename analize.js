@@ -1,5 +1,5 @@
 var match = function(text, fn) {
-	var words = text.split(' ').map(function(word) {
+	var words = text.replace(/[\.\,\!\[\]\(\)\?]/, ' ').split(' ').map(function(word) {
 		return word.toLowerCase();
 	});
 	
