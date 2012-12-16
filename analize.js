@@ -15,13 +15,17 @@ var match = function(text, fn) {
 		}, 0);
 	});
 	
-	return matches.reduce(function(current, match) {
-		if (match.count >= current.count) {
-			return match;
-		} else {
-			return current;
-		}
-	}).message;
+	if (matches.length > 0) {
+		return matches.reduce(function(current, match) {
+			if (match.count >= current.count) {
+				return match;
+			} else {
+				return current;
+			}
+		}).message;
+	} else {
+		return fn(' ', true).message;
+	}
 };
 
 exports.match = match;
