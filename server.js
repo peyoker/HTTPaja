@@ -19,6 +19,10 @@ server.get('/text/:text', function (req, res, next) {
 	res.send(anal.match(req.params.text, paja.word));
 });
 
+server.post('/text', function (req, res, next) {
+	res.send(anal.match(req.params.text, paja.word));
+});
+
 server.listen(9100, function () {
 	console.log('server listening');
 });
